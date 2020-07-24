@@ -57,7 +57,6 @@ bool checkLegalInDirection(char board[26][26], int n, char turn, int row, int co
                 currentCol = col + deltaCol*i;
             }while(positionInBounds(n, currentRow, currentCol) == true && board[currentRow][currentCol] == opposite);
 
-            //printf("\n%c, row-%d col-%d, delta: %d %d\n", board[currentRow][currentCol], currentRow, currentCol, deltaRow, deltaCol);
             if (positionInBounds(n, currentRow, currentCol) == true && board[currentRow][currentCol] == turn){
                 legal = true;
                 return legal;
